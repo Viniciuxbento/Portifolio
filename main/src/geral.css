@@ -1,0 +1,41 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Patua+One&family=Poppins:wght@500&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #282828;
+    font-family: 'Montserrat', sans-serif;
+}
+hr{
+   margin: 20px;
+   
+}
+#tecnologias{
+    padding-left: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.h1Header{
+    color: #ffffffbd;
+    text-align: center;
+    padding: 30px;
+    padding-top: 80px;
+    
+}
+.h2Header{
+    color: #fcc755;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-bottom: 80px;
+    
+}
+.h1Principal{
+    color: #fcc755;
+    text-align: center;
+   padding:30px;
+    
+}

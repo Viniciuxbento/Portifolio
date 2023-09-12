@@ -1,0 +1,57 @@
+#minha-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#container-minha-foto {
+    text-align: center;
+    padding: 25px;
+
+}
+
+#imagens-tecnologias {
+    width: 40px;
+    height: 41px;
+    padding: 9px;
+    padding-left: 15px;
+}
+
+#imagens-tecnologias1 {
+    width: 30px;
+    height: 43px;
+    padding: 9px;
+}
+
+#imagens-tecnologias2 {
+    width: 36px;
+    height: 36px;
+    padding: 9px;
+
+}
+
+#imagens-tecnologias3 {
+    width: 34px;
+    height: 36px;
+    padding: 9px;
+}
+
+#imagens-tecnologias4 {
+    width: 35px;
+    height: 35px;
+    padding: 9px;
+    padding-right: 0px;
+}
+
+#imagens-tecnologias5 {
+    width: 65px;
+    height: 35px;
+
+    padding: 9px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
