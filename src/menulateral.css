@@ -1,0 +1,16 @@
+@media(min-width:900px){
+    #hamburguer{
+        display: none;
+    }
+}
+
+#hamburguer{
+    color: wheat;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+#hamburguer.material-symbols-outlined{
+    width: 100px;
+    height: auto;
+}

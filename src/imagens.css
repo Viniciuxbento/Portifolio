@@ -2,13 +2,22 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 3px solid white;
 }
 
 #container-minha-foto {
     text-align: center;
     padding: 25px;
 
+}
+@media (min-width:900px){
+    #minha-foto {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 3px solid white;
+    }
+    
 }
 
 #imagens-tecnologias {

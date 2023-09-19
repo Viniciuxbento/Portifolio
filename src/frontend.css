@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Patua+One&family=Poppins:wght@500&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+
+
+@media(min-width:900px){
+#text{
+    font-size: 50px;
+}
+}
+#text {
+    overflow: hidden;
+    text-align: center;
+    color: #ffffffbd;
+    font-weight: normal;
+    font-family: 'Anonymous Pro', monospace;
+    padding-bottom: 30px;
+
+}
+
+#text:after {
+    content: '';
+    display: inline-block;
+    background-color: white;
+    margin-left: 2px;
+    height: 25px;
+    width: 4px;
+    animation: cursor 0.4s infinite;
+}
+
+/* The typewriter cursor effect */
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+
+    49% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

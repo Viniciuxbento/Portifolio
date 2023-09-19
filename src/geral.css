@@ -1,41 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Patua+One&family=Poppins:wght@500&family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Patua+One&family=Poppins:wght@500&family=Roboto+Condensed:ital,wght@1,300&display=swap');
-
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-body{
+
+body {
     background-color: #282828;
     font-family: 'Montserrat', sans-serif;
 }
-hr{
-   margin: 20px;
-   
+
+header {
+    height: 100vh;
 }
-#tecnologias{
+
+#tecnologias {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
-.h1Header{
+.h1Header {
     color: #ffffffbd;
     text-align: center;
     padding: 30px;
     padding-top: 80px;
-    
+
 }
-.h2Header{
+
+.h2Header {
     color: #fcc755;
     text-align: center;
     padding-bottom: 30px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
+
+
+}
+
+.h1Principal {
+    color: rgb(15, 15, 15);
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    background-color: rgb(236, 236, 236);
+
+}
+
+.containerUl {
+    text-align: center;
+}
+
+.ulConfig {
+    display: flex;
+    justify-content: space-evenly;
+    color: wheat;
+    padding-left: 30%;
+    padding-right: 30%;
+    list-style: none;
+
+}
+
+@media(max-width:900px) {
+    .containerUl {
+        display: none;
+    }
+
+    .imagemProjeto {
+        width: 320px;
+        height: 170px;
+    }
+
+    .h2QuemSou {
+        font-size: smaller;
+        color: #282828;
+        
+      
+        
+    }
+    .sectionContato{
+    
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .divContato{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
     
 }
-.h1Principal{
-    color: #fcc755;
+
+footer {
     text-align: center;
-   padding:30px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    width: auto;
+    padding: 5px;
+    font-size: 15px;
+    background-color: #282828;
+
+}
+
+.containerQuemSou {
     
+    background-image: url(imagens/dev.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    
+
+}
+
+.h2QuemSou {
+    width: 500px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.281);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+
+.sectionContato{
+   
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#linkRedes{
+    text-decoration: none;
+    color: white;
+    font-size: smaller;
+}
+
+.divContato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:  wrap;
+    padding: 8px;
 }
