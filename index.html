@@ -2,219 +2,336 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vinicius Bento</title>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="src/imagens.css">
-  <link rel="stylesheet" href="src/geral.css">
-  <link rel="stylesheet" href="src/timeline.css">
-  <link rel="stylesheet" href="src/projetos.css">
-  <link rel="stylesheet" href="src/frontend.css">
-  <link rel="stylesheet" href="src/menulateral.css">
-  <script src="darkTheme.js" defer></script>
-  <script src="src/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinicius Bento</title>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-  <header>
-    <div id="hamburguer"><span class="material-symbols-outlined">
-        menu
-      </span></div>
-    <div id="container-minha-foto"><img id="minha-foto" src="src/imagens/minhafoto.png" alt="minha-foto"></div>
+    <!--DIV DA PAGINA PRINCIPAL-->
+    <div class="container">
+        <div class="home">
 
-    <div class="containerUl">
-      <ul class="ulConfig">
-        <li>
-          <span class="material-symbols-outlined">
-            self_improvement
-          </span>
-          <div>SOBRE MIM</div>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">
-            phone_iphone
-          </span><div>ENTRE EM CONTATO</div>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">
-            code
-          </span>
-          <div>COMPETÊNCIAS</div>
-        </li>
-        <li>
-          <span class="material-symbols-outlined">
-            integration_instructions
-          </span>
-          <div>PROJETOS</div>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <div class="divH1Header">
-        <h1 class="h1Header">Olá! Eu sou Vinicius!</h1>
-      </div>
-      <h2 id="text">Desenvolvedor Front-End!</h2>
-      <h2 class="h2Header">Conheça meu portifólio!</h2>
-    </div>
-    <div id="tecnologias">
-      <img id="imagens-tecnologias" src="src/imagens/html5.png" alt="html">
-      <img id="imagens-tecnologias1" src="src/imagens/css3.png" alt="html">
-      <img id="imagens-tecnologias2" src="src/imagens/js.png" alt="javascript">
-      <img id="imagens-tecnologias3" src="src/imagens/nodeJS.png" alt="nodejs">
-      <img id="imagens-tecnologias4" src="src/imagens/git.png" alt="git">
-      <img id="imagens-tecnologias5" src="src/imagens/github.png" alt="github">
-    </div>
-  </header>
-  <div class="divH1Header">
-    <h1 class="h1Principal">Sobre Mim:</h1>
-  </div>
-  <div class="containerQuemSou">
+            <i class="containerIconeMenuLateral" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"><img class="iconeMenuLateral" src="icons/menu.png" alt=""></i>
 
-    <h2 class="h2QuemSou"> <span class="material-symbols-outlined" style="transform: rotate(180deg);;">
-        format_quote
-      </span>Eu sou Vinicius, e desde que me conheço por gente, tenho uma paixão inabalável pela tecnologia. Desde cedo,
-      fui envolvido pelo fascinante mundo da tecnologia e dos videogames. Foi através de amigos que entrei em contato
-      com a programação, e desde então, mergulhei de cabeça nesse incrível universo de códigos.
-      Além disso, sou um verdadeiro entusiasta da música. Tenho um grande apreço por instrumentos musicais e, sempre que
-      posso, dedico um tempo pra fazer um som. No entanto, meu passatempo favorito é simplesmente ouvir música. É assim
-      que recarrego minhas energias e encontro inspiração para enfrentar os desafios do dia a dia.
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title linksEstiloMenuLateral" id="offcanvasScrollingLabel">Opcções</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body configMenuLateral">
+                    <a class="linksEstiloMenuLateral" href="#aboutMe">Sobre mim</a>
+                    <a class="linksEstiloMenuLateral" href="#habilidadesAncora"">Tecnologias</a>
+                    <a class=" linksEstiloMenuLateral" href="#ProjetosAncora">Projetos</a>
+                </div>
+            </div>
 
-      Esse sou eu, alguém que encontra beleza tanto na complexidade da tecnologia quanto na simplicidade da música, e
-      que busca constantemente novas maneiras de explorar e celebrar essas paixões na vida.<span
-        class="material-symbols-outlined">
-        format_quote
-      </span></h2>
-  </div>
 
-  <div class="divH1Header">
-    <h1 class="h1Principal">Competências:</h1>
-  </div>
-  <article id="artigoCompetencias">
-
-    <div class="timeline">
-      <div class="outer">
-        <div class="card">
-          <div class="info">
-            <h3 class="title">HTML 5</h3>
-            <p>Conhecimento avançado em HTML 5: <br>
-              *Semântica<br>*Forms e Validações<br>*Acessibilidade</p>
-          </div>
+            <div class="textoPrincipal">
+                <h2 data-aos="fade-right" data-aos-duration="2000" class="hello">Olá! Eu sou</h2>
+                <h1 data-aos="zoom-in" data-aos-duration="2000" class="vinicius">Vinicius Bento</h1>
+                <h2 class="titulo-principal">Desenvolvedor Front-end.</h2>
+            </div>
+            <div class="imagem">
+                <img data-aos-duration="2000" data-aos="zoom-in" class="fotoMinha" src="imagens/minhafoto.png" alt="">
+                <div class="redes">
+                    <a class="icons" target="_blank" href="https://www.instagram.com/viniciuxbento/"><img
+                            src="icons/instagram.png" alt=""></a>
+                    <a class="icons" target="_blank" href="https://www.linkedin.com/in/vinicius-bento-b4313a197/"><img
+                            src="icons/logotipo-do-linkedin.png" alt=""></a>
+                    <a class="icons" target="_blank" href="https://github.com/Viniciuxbento"><img src="icons/github.png"
+                            alt=""></a>
+                    <a class="icons" target="_blank" href="https://wa.me/5548991879537"><img src="icons/whatsapp.png"
+                            alt=""></a>
+                </div>
+            </div>
         </div>
-        <div class="card">
-          <div class="info">
-            <h3 class="title">CSS 3</h3>
-            <p>Conhecimento avançado em CSS 3:<br>
-              *Mobile-First<br>*Responsividade<br>*Flexbox/Grid<br>*Media Query </p>
-          </div>
+        <div class="links">
+            <a class="linksEstilo" href="#aboutMe">Sobre mim</a>
+            <a class="linksEstilo" href="#habilidadesAncora">Tecnologias</a>
+            <a class="linksEstilo" href="#ProjetosAncora">Projetos</a>
         </div>
-        <div class="card">
-          <div class="info">
-            <h3 class="title">JavaScript </h3>
-            <p>Conhecimento avançado em
-              EcmaScript(JavaScript):<br>*POO<br>*CommomJS<br>*ESModules<br>*NPM<br>*WebPack<br>*Regular
-              Expresions/Regex<br>*Tratamento de Erros<br>*Promises<br>*Funções Async</p>
-          </div>
+
+    </div>
+    <!--DIV DA PARTE QUE FALA QUEM SOU-->
+    <div class="quemSou">
+        <div class="imagemQuemSou">
+            <img data-aos="zoom-in-right" data-aos-duration="1000" class="fotoBh" src="imagens/euBH.png" alt="">
         </div>
-        <div class="card">
-          <div class="info">
-            <h3 class="title">Node Js </h3>
-            <p>Conhecimento Básico em Node</p>
-          </div>
+
+        <div id="aboutMe" class="textoQuemSou">
+            <p class="pQuemSou">Nascido em 2000</p>
+            <h1 data-aos="zoom-out-right" data-aos-duration="1000" class="h1quemSou">Um pouco sobre mim...</h1>
+            <p data-aos="zoom-out-right" data-aos-duration="1000" class="pQuemSou2">&ensp;&ensp;Eu sou Vinicius, e desde que me conheço por gente, tenho uma paixão inabalável pela tecnologia. Desde cedo, fui envolvido pelo fascinante mundo da tecnologia e dos videogames. Foi através de amigos que entrei em contato com a programação, e desde então, mergulhei de cabeça nesse incrível universo de códigos.
+
+                Além disso, sou um verdadeiro entusiasta da música. Tenho um grande apreço por instrumentos musicais e, sempre que posso, dedico um tempo para tocar algo. No entanto, meu passatempo favorito é simplesmente ouvir música. É assim que recarrego minhas energias e encontro inspiração para enfrentar os desafios do dia a dia..
+            </p>
+            <p class="pQuemSou2" style="color: gray;">*Esse sou eu, alguém que encontra beleza tanto na complexidade da tecnologia quanto na simplicidade da música, e que busca constantemente novas maneiras de explorar e celebrar essas paixões na vida.</p>
+            <p class="pQuemSou">-Vinicius Bento</p>
         </div>
-        <div class="card">
-          <div class="info">
-            <h3 class="title">GIT & GitHub</h3>
-            <p>Conhecimento Básico</p>
-          </div>
+
+    </div>
+    <!--DIV QUE FALA SOBRE MINHAS SKILLS-->
+    <div id="habilidadesAncora" class="skills">
+        <div data-aos="fade-down" class="softSkills">
+            <h1 class="h1Skills">Habilidades Pessoais</h1>
+            <ul class="ulSkills">
+                <li>Inteligência emocional</li>
+                <li>Comunicação Eficaz</li>
+                <li>Resoluçaõ de problemas</li>
+                <li>Trabalho em equipe</li>
+                <li>Pensamento crítico</li>
+                <li>Adaptação</li>
+                <li>Criatividade</li>
+                <li>Aprendizado</li>
+                <li>Atenção aos mínimos detalhes</li>
+                <li>Empatia</li>
+                <li>Hiperfoco</li>
+                <li>Resiliencia</li>
+                <li>Tomada de decisões</li>
+            </ul>
         </div>
-      </div>
-    </div>
-  </article>
+
+        <div class="linguagens">
+            <h1 class="h1Skills">Tecnologias</h1>
+            <div data-aos="fade-down" class="divTecContainer">
+                <div class="divTec">
+                    <p>HTML5</p>
+                    <img class="iconSkills" src="icons/html.png" alt="">
+                </div>
+
+                <div class="divTec">
+                    <p>CSS3</p>
+                    <img class="iconSkills" src="icons/css.png" alt="">
+                </div>
+
+                <div class="divTec">
+                    <p>Sass/Scss</p>
+                    <img class="iconSkills" src="icons/sass.png" alt="">
+                </div>
+
+                <div class="divTec">
+                    <p>JavaScript</p>
+                    <img class="iconSkills" src="icons/JS.png" alt="">
+                </div>
+                <div class="divTec">
+                    <p>TypeScript</p>
+                    <img class="iconSkills" src="icons/TypeScript.png" alt="">
+                </div>
+                <div class="divTec">
+                    <p>React</p>
+                    <img class="iconSkills" src="icons/react.png" alt="">
+                </div>
+                <div class="divTec">
+                    <p>Bootstrap</p>
+                    <img class="iconSkills" src="icons/Bootstrap (1).png" alt="">
+                </div>
+                <div class="divTec">
+                    <p>JSON</p>
+                    <img class="iconSkills" src="icons/json_115517.png" alt="">
+                </div>
+                <div class="divTec">
+                    <p>Git</p>
+                    <img class="iconSkills" src="icons/git.png" alt="">
+                </div>
+                <div class="divTec">
+                    <p>GitHub</p>
+                    <img class="iconSkills" src="icons/github (2).png" alt="">
+                </div>
 
 
-  <div class="divH1Header">
-    <h1 class="h1Principal" >Projetos:</h1>
-  </div>
-
-  <section id="containerTodosOsProjetos">
-
-    <div class="containerProjeto">
-      <h2 class="tituloProjeto">
-        Tic-Tac-Toe
-      </h2>
-      <p class="descricaoProjeto">
-        Projeto Tic-Tac-Toe, mais conhecido como "Jogo da Velha", desenvolvido em Javascript e HTML com estilisação em
-        CSS.
-      </p>
-      <div class="containerImagemProjeto">
-        <img class="imagemProjeto" src="src/imagensProjetos/ProjetoJogoDaVelha.png" alt="" srcset="">
-      </div>
-      <div class="containerImagemsTecnologias">
-        <img id="imagens-tecnologias" src="src/imagens/html5.png" alt="html">
-        <img id="imagens-tecnologias1" src="src/imagens/css3.png" alt="html">
-        <img id="imagens-tecnologias2" src="src/imagens/js.png" alt="javascript">
-      </div>
-    </div>
+            </div>
 
 
-    <div class="containerProjeto">
-      <h2 class="tituloProjeto">
-        Calculadora
-      </h2>
-      <p class="descricaoProjeto">
-        Projeto Calculadora, desenvolvido em Javascript , com a função de tema escuro e tema claro e HTML com
-        estilisação
-        em CSS.
-      </p>
-      <div class="containerImagemProjeto">
-        <img class="imagemProjeto" src="src/imagensProjetos/calculadora.jpg" alt="" srcset="">
-      </div>
-      <div class="containerImagemsTecnologias">
-        <img id="imagens-tecnologias" src="src/imagens/html5.png" alt="html">
-        <img id="imagens-tecnologias1" src="src/imagens/css3.png" alt="html">
-        <img id="imagens-tecnologias2" src="src/imagens/js.png" alt="javascript">
-      </div>
-    </div>
+        </div>
+        <div class="outras">
+            <h1 class="h1Skills">Algumas outras</h1>
+            <div>
+                <ul data-aos="fade-down" class="ulSkills2">
+                    
+                    <li class="liColor">WebPack</li>
+                    <li class="liColor">ESModules</li>
+                    <li class="liColor">CommonJs</li>
+                    <li class="liColor">NPM</li>
+                    <li class="liColor">POO</li>
+                    <li class="liColor">Error handling</li>
+                    <li class="liColor">Regex</li>
+                    <li class="liColor">Promises</li>
+                    <li class="liColor">Async</li>
+                </ul>
+            </div>
+        </div>
 
-
-
-  </section>
-  <div class="divH1Header">
-    <h1 class="h1Principal"><span class="material-symbols-outlined">
-        phone_iphone
-      </span>Entre em contato:</h1>
-  </div>
-  <section class="sectionContato">
-    <div class="divContato">
-      <label for="zap"><img src="src/imagensRedes/whatsapp.png" alt="zap"></label>
-      <a id="linkRedes" target="_blank" name="zap" href="https://wa.me/5548991879537"> WhatsApp</a>
-    </div>
-
-
-    <div class="divContato">
-      <label for="insta"><img src="src/imagensRedes/instagram.png" alt="insta"></label>
-      <a id="linkRedes" target="_blank" name="insta" href="https://www.instagram.com/viniciuxbento/">Instagram</a>
-    </div>
-
-
-    <div class="divContato">
-      <label for="lkdn"><img src="src/imagensRedes/linkedin.png" alt="lkdn"></label>
-      <a id="linkRedes" target="_blank" name="lkdn"
-        href="https://www.linkedin.com/in/vinicius-bento-b4313a197/">LinkedIn</a>
     </div>
 
 
-    <div class="divContato">
-      <label for="git"><img src="src/imagensRedes/github.png" alt="git"></label>
-      <a id="linkRedes" target="_blank" name="git" href="https://github.com/Viniciuxbento">GitHub</a>
     </div>
+    <!--DIV QUE MOSTRA MEUS PROJETOS-->
+    <div id="ProjetosAncora" class="meusProjetos">
+        <h1 class="h1Projeto" style="text-align: center;color:white; padding-top: 100px;">Meus projetos</h1>
+        <hr>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                    aria-label="Slide 8"></button>
+            </div>
+            <div class="carousel-inner" >
+                
+                <div class="carousel-item active" data-bs-interval="20000">
+                    <div class="d-block w-100 containerProjeto">
+                        <h1 class="h1Projeto">Meu portifólio</h1>
+                        <div class="quebra">
+                            <img class="ImagemProjeto" src="imagensProjetos/portif2.png" alt="">
+                            <a href="https://github.com/Viniciuxbento/ListaDeCompras" target="_blank"><button type="button" class="btn btn-outline-success">Ver no GitHub</button></a>
+                        </div>
+                        <p class="pProjeto">Desenvolvido com HTML, CSS, SCSS, JavaScript, Bootstrap e a lib AOS. Projeto do meu portifólio atual, desenvolvido com intuito de mostrar minhas habilidades e feitos relacionados à tecnologia.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="20000">
+                    <div class="d-block w-100 containerProjeto">
+                        <h1 class="h1Projeto">Shopping List</h1>
+                        <div class="quebra">
+                            <img class="ImagemProjeto" src="imagensProjetos/listaDeCompras.png" alt="">
+                            <a href="https://github.com/Viniciuxbento/ListaDeCompras" target="_blank"><button type="button" class="btn btn-outline-success">Ver no GitHub</button></a>
+                        </div>
+                        <p class="pProjeto">Projeto desenvolvido com HTML, CSS, e JavaScript, criando uma lista de compras com funções para adcionar e remover itens da planilha.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="20000">
+                    <div class="d-block w-100 containerProjeto">        
+                        <h1 class="h1Projeto">Perfil GitHubAPI</h1>
+                        <div class="quebra">
+                            <img class="ImagemProjeto bgw" src="imagensProjetos/github.png" alt="">
+                            <a href="" target="_blank"><button type="button" class="btn btn-outline-success">Ver no GitHub</button></a>
+                        </div>
+                        <p class="pProjeto">Projeto desenvolvido com TypeScript, HTML, Sass, Regex que usa a API de dados do GitHub para pegar os dados públicos dos usuários e retorna parte das informações na interface.</p>
+                    </div>
+                </div>
 
-  </section>
+                <div class="carousel-item" data-bs-interval="20000">
+                    <div class="d-block w-100 containerProjeto">
+                        <h1 class="h1Projeto">Calculadora</h1>
+                        <div class="quebra">
+                            <img class="ImagemProjeto bgw" src="imagensProjetos/calculadoraOB.png" alt="">
+                            <a href="https://github.com/Viniciuxbento/Calculadora-JS" target="_blank"><button type="button" class="btn btn-outline-success">Ver no GitHub</button></a>
+                        </div>
+                        <p class="pProjeto">Projeto desenvolvido com HTML, CSS, e JavaScript, com todas as funções de uma calculadora, função para copiar resultado para área de transferência e o plus que substitui o tema de escuro para claro, e claro para escuro.(DarkTheme)</p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item" data-bs-interval="20000">
+                    <div class="d-block w-100 containerProjeto">
+                        <h1 class="h1Projeto">Tic-Tac-Toe(Jogo da Velha)</h1>
+                        <div class="quebra">
+                            <img class="ImagemProjeto bgw" src="imagensProjetos/tictactoe.png" alt="">
+                            <a href="https://github.com/Viniciuxbento/Jogo-Da-Velha" target="_blank"><button type="button" class="btn btn-outline-success">Ver no GitHub</button></a>
+                        </div>
+                        <p class="pProjeto">Projeto desenvolvido com HTML, CSS, e JavaScript. Jogo da velha com o modo P1 vs P2, com funções do jogo, função que sinaliza jogador da vez e o vencedor.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="20000">
+                    <div class="d-block w-100 containerProjeto">
+                        <h1 class="h1Projeto">Login Page</h1>
+                        <div class="quebra">
+                            <img class="ImagemProjeto" src="imagensProjetos/TelaLogin.png"alt="">
+                            <a href="https://github.com/Viniciuxbento/Projeto-Login" target="_blank"><button type="button" class="btn btn-outline-success">Ver no GitHub</button></a>
+                        </div>
+                        <p class="pProjeto">Projeto desenvolvido com HTML, CSS. Simulando um layout de login para uma site em que é necessária a verificação de usuário. </p>
+                    </div>
+                </div>
 
-  <footer>Criado e desenvolvido por Vinicius Bento®</footer>
+                <div class="carousel-item" data-bs-interval="20000">
+                    <div class="d-block w-100 containerProjeto">
+                        <h1 class="h1Projeto">Retro Login Page</h1>
+                        <div class="quebra">
+                            <img class="ImagemProjeto" src="imagensProjetos/LoginRetro.png" alt="">
+                            <a href="https://github.com/Viniciuxbento/LoginPage" target="_blank"><button type="button" class="btn btn-outline-success">Ver no GitHub</button></a>
+                        </div>
+                        <p class="pProjeto">Projeto desenvolvido com HTML, CSS. Simulando um layout um pouco mais retro (não tão moderno) para sites.</p>
+                    </div>
+                </div>
 
+                <div class="carousel-item" data-bs-interval="20000">
+                    <div class="d-block w-100 containerProjeto">
+                        <h1 class="h1Projeto">Formulário</h1>
+                        <div class="quebra">
+                            <img class="ImagemProjeto bgw" src="imagensProjetos/formOnebit.jpg" alt="">
+                            <a href="" target="_blank"><button type="button" class="btn btn-outline-success">Ver no GitHub</button></a>
+                        </div>
+                        <p class="pProjeto">Projeto desenvolvido com HTML, SCSS, JavaScript e Bootstrap. Feito com inspiração no do curso OneBitCode. </p>
+                    </div>
+                </div>
+
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <footer><p>Criado e desenvolvido por Vinicius Bento Gonçalves®</p></footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
